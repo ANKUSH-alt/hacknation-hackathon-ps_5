@@ -115,15 +115,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/5 text-center space-y-4">
-        <p className="text-text-muted text-sm">© 2026 UNMAPPED • Infrastructure for Economic Visibility</p>
-        <p className="text-text-muted text-sm">Powered by ILOSTAT & World Bank Data Signals</p>
-        <div className="pt-4">
-          <Limitations />
-        </div>
-      </footer>
-
       {/* Loading Overlay */}
       {isLoading && (
         <div className="fixed inset-0 z-[100] bg-black flex items-center justify-center animate-fade-in">

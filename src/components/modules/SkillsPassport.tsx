@@ -96,10 +96,16 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
 
       {/* Actions */}
       <div className="p-8 pt-0 flex flex-wrap gap-4">
-        <button className="btn-primary flex items-center gap-2 !px-6">
+        <button 
+          onClick={() => alert('Exporting Official Skills Passport as PDF with ISCO-08 Verification...')}
+          className="btn-primary flex items-center gap-2 !px-6"
+        >
           <Download size={16} /> Export to PDF
         </button>
-        <button className="px-6 py-3 rounded-xl border border-white/10 font-bold text-sm flex items-center gap-2 hover:bg-white/5 transition-colors">
+        <button 
+          onClick={() => alert('Opening WhatsApp to share your verified credentials with local tech co-operatives...')}
+          className="px-6 py-3 rounded-xl border border-white/10 font-bold text-sm flex items-center gap-2 hover:bg-white/5 transition-colors"
+        >
           <Share2 size={16} /> Share via WhatsApp
         </button>
       </div>

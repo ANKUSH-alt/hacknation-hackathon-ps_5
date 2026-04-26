@@ -49,6 +49,7 @@ export const OpportunityMatching = () => {
                 </div>
                 <motion.button 
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => alert(`Connecting you to ${op.company} for the ${op.title} position...\n\nRequired: ISCO-08 Verified Passport.`)}
                   className="px-4 py-2 rounded-lg bg-white/10 hover:bg-primary hover:text-white transition-all text-xs font-bold"
                 >
                   CONTACT

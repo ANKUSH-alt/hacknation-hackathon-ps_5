@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 };
 
 import { VoiceAssistance } from "@/components/layout/VoiceAssistance";
+import { Footer } from "@/components/layout/Footer";
 
 export default function RootLayout({
   children,
@@ -37,7 +38,10 @@ export default function RootLayout({
         <AppProvider>
           <Navbar />
           <RecalibrationOverlay />
-          {children}
+          <div className="flex-1 flex flex-col">
+            {children}
+          </div>
+          <Footer />
           <OfflineIndicator />
           <VoiceAssistance />
         </AppProvider>
