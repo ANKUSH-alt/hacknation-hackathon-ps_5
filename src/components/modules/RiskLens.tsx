@@ -27,7 +27,7 @@ export const RiskLens = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-3xl -mr-32 -mt-32 rounded-full transition-all duration-700 group-hover:bg-primary/10" />
         <h2 className="text-3xl font-heading font-bold mb-4 gradient-text">AI Readiness & Risk</h2>
         <p className="text-text-muted mb-6">
-          Calibrated for {country.name} ({country.automation.infrastructureContext}). 
+          Calibrated for {country.name} (<span className="capitalize">{country.automation.infrastructureContext.replace(/_/g, ' ')}</span>). 
           Showing skill value trajectory from 2026 to 2035.
         </p>
 

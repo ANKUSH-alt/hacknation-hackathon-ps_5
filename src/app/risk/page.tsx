@@ -14,7 +14,7 @@ export default function RiskPage() {
         <div className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight">AI Readiness & <span className="gradient-text">Displacement Risk</span></h1>
           <p className="text-text-muted text-lg">
-            Honest automation assessment for {country.name}. Calibrated for {country.automation.infrastructureContext} infrastructure.
+            Honest automation assessment for {country.name}. Calibrated for <span className="capitalize">{country.automation.infrastructureContext.replace(/_/g, ' ')}</span> infrastructure.
           </p>
         </div>
 
@@ -27,17 +27,17 @@ export default function RiskPage() {
             <div className="card border-primary/20 bg-primary/5">
               <h3 className="font-bold mb-4">Infrastructure Calibration</h3>
               <div className="space-y-4 text-sm">
-                <div className="flex justify-between">
+                <div className="flex justify-between items-start gap-4">
                   <span className="text-text-muted">Connectivity</span>
-                  <span className="font-mono">{country.automation.infrastructureContext}</span>
+                  <span className="font-mono text-right capitalize">{country.automation.infrastructureContext.replace(/_/g, ' ')}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-start gap-4">
                   <span className="text-text-muted">Digital Penetration</span>
-                  <span className="font-mono">{Math.round(country.automation.digitalPenetration * 100)}%</span>
+                  <span className="font-mono text-right">{Math.round(country.automation.digitalPenetration * 100)}%</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-text-muted">Adjustment Factor</span>
-                  <span className="font-mono">{country.automation.taskCompositionAdjustment}</span>
+                <div className="flex justify-between items-start gap-4">
+                  <span className="text-text-muted text-left">Adjustment Factor</span>
+                  <span className="font-mono text-right capitalize">{country.automation.taskCompositionAdjustment.replace(/_/g, ' ')}</span>
                 </div>
               </div>
             </div>
