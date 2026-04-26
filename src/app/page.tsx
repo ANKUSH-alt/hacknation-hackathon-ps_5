@@ -79,6 +79,12 @@ export default function Home() {
             icon="🎯"
           />
           <ModuleTeaser 
+            title="Journey Map" 
+            desc="Predictive 2026→2035 career pathways." 
+            href="/journey"
+            icon="🗺️"
+          />
+          <ModuleTeaser 
             title="AI Risk Lens" 
             desc="Honest automation risk assessments." 
             href="/risk"

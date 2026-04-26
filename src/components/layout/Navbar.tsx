@@ -14,8 +14,9 @@ export const Navbar = () => {
       </Link>
       
       <div className="hidden md:flex items-center gap-8">
-        <NavLink href="/skills" label="Skills Engine" />
-        <NavLink href="/risk" label="AI Risk Lens" />
+        <NavLink href="/skills" label="Skills" />
+        <NavLink href="/journey" label="Journey Map" />
+        <NavLink href="/risk" label="AI Risk" />
         <NavLink href="/opportunities" label="Opportunities" />
         <NavLink href="/dashboard" label="Policymaker" />
       </div>
