@@ -19,6 +19,9 @@ export const indiaConfig: CountryConfig = {
       averageWage: 15000,
       growthRate: 6.2,
       informalSectorSize: '90%',
+      techSectorGrowth: 22.5,
+      skillsPremium: 42,
+      digitalPenetration: 48,
     },
     opportunities: [
       { title: 'Agri-Tech Field Officer', type: 'Formal Employment', company: 'Bharat Agri', wage: '18000 - 22000 INR', distance: '12km' },

@@ -19,6 +19,9 @@ export const ghanaConfig: CountryConfig = {
       averageWage: 1200,
       growthRate: 4.5,
       informalSectorSize: '85%',
+      techSectorGrowth: 18.2,
+      skillsPremium: 35,
+      digitalPenetration: 43,
     },
     opportunities: [
       { title: 'Mobile Repair Technician', type: 'Formal Employment', company: 'TechSolutions Accra', wage: '1200 - 1500 GHS', distance: '3.2km' },

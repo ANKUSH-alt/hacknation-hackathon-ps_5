@@ -17,6 +17,9 @@ export interface CountryConfig {
       averageWage: number;
       growthRate: number;
       informalSectorSize: string;
+      techSectorGrowth: number;
+      skillsPremium: number;
+      digitalPenetration: number;
     };
     opportunities: Array<{
       title: string;

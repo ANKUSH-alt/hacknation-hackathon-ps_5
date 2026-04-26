@@ -50,23 +50,27 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Economic Signals */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-24">
-          <div className="card glass">
-            <p className="text-xs text-text-muted uppercase font-bold mb-1">Avg. Monthly Wage</p>
-            <p className="text-2xl font-bold">{country.localization.currencySymbol}{country.laborMarket.signals.averageWage}</p>
+        {/* Economic Signals - Priority 1.1 Implementation */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24">
+          <div className="card glass border-primary/20">
+            <p className="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Tech Growth</p>
+            <p className="text-3xl font-bold">+{country.laborMarket.signals.techSectorGrowth}%</p>
+            <p className="text-[8px] text-text-muted mt-2 uppercase">Source: ILO ILOSTAT 2024</p>
           </div>
-          <div className="card glass">
-            <p className="text-xs text-text-muted uppercase font-bold mb-1">Growth Rate</p>
-            <p className="text-2xl font-bold text-success">+{country.laborMarket.signals.growthRate}%</p>
+          <div className="card glass border-primary/20">
+            <p className="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Avg Wage (Informal)</p>
+            <p className="text-3xl font-bold">{country.localization.currencySymbol}{country.laborMarket.signals.averageWage}</p>
+            <p className="text-[8px] text-text-muted mt-2 uppercase">Source: World Bank WDI</p>
           </div>
-          <div className="card glass">
-            <p className="text-xs text-text-muted uppercase font-bold mb-1">Informal Economy</p>
-            <p className="text-2xl font-bold">{country.laborMarket.signals.informalSectorSize}</p>
+          <div className="card glass border-primary/20">
+            <p className="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Skills Premium</p>
+            <p className="text-3xl font-bold">+{country.laborMarket.signals.skillsPremium}%</p>
+            <p className="text-[8px] text-text-muted mt-2 uppercase">Vocational Increment</p>
           </div>
-          <div className="card glass">
-            <p className="text-xs text-text-muted uppercase font-bold mb-1">Digital Readiness</p>
-            <p className="text-2xl font-bold">{Math.round(country.automation.digitalPenetration * 100)}%</p>
+          <div className="card glass border-primary/20">
+            <p className="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Digital Ready</p>
+            <p className="text-3xl font-bold">{country.laborMarket.signals.digitalPenetration}%</p>
+            <p className="text-[8px] text-text-muted mt-2 uppercase">Source: ITU 2024</p>
           </div>
         </div>
 

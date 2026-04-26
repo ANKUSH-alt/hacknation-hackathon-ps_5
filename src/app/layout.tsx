@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import { Navbar } from "@/components/layout/Navbar";
 import { RecalibrationOverlay } from "@/components/layout/RecalibrationOverlay";
+import { OfflineIndicator } from "@/components/layout/OfflineIndicator";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           <RecalibrationOverlay />
           {children}
+          <OfflineIndicator />
         </AppProvider>
       </body>
     </html>
