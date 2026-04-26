@@ -53,7 +53,7 @@ export const generateJourneyData = (country: CountryConfig) => {
           requiredSkills: [{ name: 'React Native', current: false }, { name: 'Node.js', current: false }],
           pathway: [{ action: 'Complete Open-Source Bootcamp', duration: '12 weeks', cost: 0 }],
           opportunities: [{ title: 'Junior Dev', company: 'TechHub', distance: 3.2, whatsapp: '233501234567' }],
-          successStory: { name: 'Kwame', age: 26, quote: 'Infrastructure opened the door.', timeframe: '2 years' }
+          successStory: { name: 'Kwame', age: 26, quote: 'I started with a passport ID and a shared phone. Now I build tools for my whole district.', timeframe: '3 years' }
         },
         position: { x: 150, y: 350 }
       },
@@ -69,7 +69,7 @@ export const generateJourneyData = (country: CountryConfig) => {
           requiredSkills: [{ name: 'System Design', current: false }, { name: 'Leadership', current: false }],
           pathway: [{ action: 'Lead 3+ Regional Projects', duration: '3 years', cost: 0 }],
           opportunities: [{ title: 'CTO', company: 'Fintech Startup', distance: 12, whatsapp: '233501111111' }],
-          successStory: { name: 'Ama', age: 31, quote: 'I lead a team of 50 now.', timeframe: '9 years' }
+          successStory: { name: 'Ama', age: 31, quote: 'UNMAPPED showed me the systems I needed to master. I am not just a coder; I am a leader.', timeframe: '9 years' }
         },
         position: { x: 150, y: 100 }
       },
@@ -86,7 +86,7 @@ export const generateJourneyData = (country: CountryConfig) => {
           requiredSkills: [{ name: 'Management', current: false }, { name: 'Scaling', current: false }],
           pathway: [{ action: 'Secure Micro-loan', duration: '6 months', cost: 500 * multiplier }],
           opportunities: [{ title: 'Business Partner', company: 'Co-op', distance: 0.5, whatsapp: '233502222222' }],
-          successStory: { name: 'Kofi', age: 28, quote: 'Scaling is about people.', timeframe: '4 years' }
+          successStory: { name: 'Kofi', age: 28, quote: 'The journey map gave me the courage to scale my repair business into a parts hub.', timeframe: '4 years' }
         },
         position: { x: 650, y: 350 }
       },
@@ -102,7 +102,7 @@ export const generateJourneyData = (country: CountryConfig) => {
           requiredSkills: [{ name: 'Strategic Planning', current: false }, { name: 'Operations', current: false }],
           pathway: [{ action: 'Franchise Model Rollout', duration: '2 years', cost: 5000 * multiplier }],
           opportunities: [{ title: 'CEO', company: 'Amara Repairs Ltd', distance: 0, whatsapp: 'self' }],
-          successStory: { name: 'Akua', age: 33, quote: 'We serve 3 regions now.', timeframe: '11 years' }
+          successStory: { name: 'Akua', age: 33, quote: 'We provide jobs for 50 other youth now. Infrastructure creates resilience.', timeframe: '11 years' }
         },
         position: { x: 650, y: 100 }
       }

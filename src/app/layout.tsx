@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: "Connecting youth skills to economic opportunities in LMICs through data-driven infrastructure.",
 };
 
+import { VoiceAssistance } from "@/components/layout/VoiceAssistance";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,6 +39,7 @@ export default function RootLayout({
           <RecalibrationOverlay />
           {children}
           <OfflineIndicator />
+          <VoiceAssistance />
         </AppProvider>
       </body>
     </html>
