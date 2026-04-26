@@ -3,6 +3,7 @@
 import React from 'react';
 import { useAppContext } from '@/context/AppContext';
 import { Limitations } from '@/components/layout/Limitations';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { PageTransition } from '@/components/layout/PageTransition';
@@ -32,16 +33,18 @@ export default function Home() {
           
           <div className="relative">
             <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full" />
-            <div className="relative card glass p-2 overflow-hidden aspect-square md:aspect-video rounded-3xl">
-              {/* Using a placeholder if the image isn't moved yet, but assuming it will be served from public */}
-              <img 
+            <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden border border-white/10 glass shadow-2xl">
+              <Image 
                 src="/amara.png" 
-                alt="Amara Persona" 
-                className="w-full h-full object-cover rounded-2xl grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+                alt="Amara, Phone Repair Specialist"
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-105"
+                priority
               />
-              <div className="absolute bottom-6 left-6 right-6 p-4 glass rounded-xl">
-                <p className="text-sm font-bold">MEET AMARA</p>
-                <p className="text-xs text-text-muted">22, {country.name} • Self-taught Technician & Coder</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6">
+                <p className="font-bold text-lg">Amara, 22</p>
+                <p className="text-xs text-text-muted uppercase tracking-widest font-bold">Accra, Ghana • Phone Repair Specialist</p>
               </div>
             </div>
           </div>

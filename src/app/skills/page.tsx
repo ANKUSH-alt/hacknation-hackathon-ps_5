@@ -14,7 +14,7 @@ export default function SkillsPage() {
         <div className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold tracking-tight">Skills Signal <span className="gradient-text">Engine</span></h1>
           <p className="text-text-muted text-lg">
-            The infrastructure layer that makes invisible skills visible. Calibrated for {country.name}'s informal economy.
+            The infrastructure layer that makes invisible skills visible. Calibrated for {country.name}&apos;s informal economy.
           </p>
         </div>
         

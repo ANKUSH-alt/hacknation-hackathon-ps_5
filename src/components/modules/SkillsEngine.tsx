@@ -24,6 +24,7 @@ export const SkillsEngine = () => {
   const [passportId, setPassportId] = useState('');
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     setPassportId(`UNM-${Math.random().toString(36).substr(2, 9).toUpperCase()}`);
   }, []);

@@ -3,7 +3,15 @@
 import React from 'react';
 import { useAppContext } from '@/context/AppContext';
 
-const OPPORTUNITIES: Record<string, any[]> = {
+interface Opportunity {
+  title: string;
+  company: string;
+  type: string;
+  wage: string;
+  distance: string;
+}
+
+const OPPORTUNITIES: Record<string, Opportunity[]> = {
   ghana: [
     { title: 'Mobile Repair Technician', type: 'Formal Employment', company: 'TechSolutions Accra', wage: '1200 - 1500 GHS', distance: '3.2km' },
     { title: 'Junior Web Developer', type: 'Apprenticeship', company: 'Digital Ghana Hub', wage: '800 - 1000 GHS', distance: '5.1km' },
