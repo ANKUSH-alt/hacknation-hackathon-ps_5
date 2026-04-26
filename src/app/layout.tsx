@@ -34,6 +34,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${outfit.variable} ${plusJakarta.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-jakarta" suppressHydrationWarning={true}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
