@@ -20,6 +20,11 @@ export const indiaConfig: CountryConfig = {
       growthRate: 6.2,
       informalSectorSize: '90%',
     },
+    opportunities: [
+      { title: 'Agri-Tech Field Officer', type: 'Formal Employment', company: 'Bharat Agri', wage: '18000 - 22000 INR', distance: '12km' },
+      { title: 'Solar Pump Technician', type: 'Training Program', company: 'Skill India', wage: 'Stipend: 5000 INR', distance: '4km' },
+      { title: 'Rural Fintech Agent', type: 'Self-employment', company: 'PayVillage', wage: 'Commission based', distance: 'Local' },
+    ],
   },
   education: {
     taxonomy: 'ISCED 2011',

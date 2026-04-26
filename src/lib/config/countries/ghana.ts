@@ -20,6 +20,11 @@ export const ghanaConfig: CountryConfig = {
       growthRate: 4.5,
       informalSectorSize: '85%',
     },
+    opportunities: [
+      { title: 'Mobile Repair Technician', type: 'Formal Employment', company: 'TechSolutions Accra', wage: '1200 - 1500 GHS', distance: '3.2km' },
+      { title: 'Junior Web Developer', type: 'Apprenticeship', company: 'Digital Ghana Hub', wage: '800 - 1000 GHS', distance: '5.1km' },
+      { title: 'Customer Support Lead', type: 'Gig Work', company: 'RemoteGlobal', wage: '15 GHS / hr', distance: 'Remote' },
+    ],
   },
   education: {
     taxonomy: 'ISCED 2011',

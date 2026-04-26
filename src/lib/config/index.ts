@@ -18,6 +18,13 @@ export interface CountryConfig {
       growthRate: number;
       informalSectorSize: string;
     };
+    opportunities: Array<{
+      title: string;
+      type: string;
+      company: string;
+      wage: string;
+      distance: string;
+    }>;
   };
   education: {
     taxonomy: string;

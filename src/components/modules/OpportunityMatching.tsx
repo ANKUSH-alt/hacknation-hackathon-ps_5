@@ -11,24 +11,12 @@ interface Opportunity {
   distance: string;
 }
 
-const OPPORTUNITIES: Record<string, Opportunity[]> = {
-  ghana: [
-    { title: 'Mobile Repair Technician', type: 'Formal Employment', company: 'TechSolutions Accra', wage: '1200 - 1500 GHS', distance: '3.2km' },
-    { title: 'Junior Web Developer', type: 'Apprenticeship', company: 'Digital Ghana Hub', wage: '800 - 1000 GHS', distance: '5.1km' },
-    { title: 'Customer Support Lead', type: 'Gig Work', company: 'RemoteGlobal', wage: '15 GHS / hr', distance: 'Remote' },
-  ],
-  india: [
-    { title: 'Agri-Tech Field Officer', type: 'Formal Employment', company: 'Bharat Agri', wage: '18000 - 22000 INR', distance: '12km' },
-    { title: 'Solar Pump Technician', type: 'Training Program', company: 'Skill India', wage: 'Stipend: 5000 INR', distance: '4km' },
-    { title: 'Rural Fintech Agent', type: 'Self-employment', company: 'PayVillage', wage: 'Commission based', distance: 'Local' },
-  ]
-};
 
 import { motion } from 'framer-motion';
 
 export const OpportunityMatching = () => {
   const { country } = useAppContext();
-  const list = OPPORTUNITIES[country.id] || [];
+  const list = country.laborMarket.opportunities || [];
 
   return (
     <div className="space-y-8 animate-fade-in">
