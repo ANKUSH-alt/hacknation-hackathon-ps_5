@@ -19,7 +19,7 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="max-w-2xl mx-auto bg-gradient-to-br from-[#0f1115] to-[#050505] border-2 border-primary/30 rounded-3xl overflow-hidden shadow-2xl relative"
+      className="max-w-2xl mx-auto bg-card border-2 border-primary/30 rounded-3xl overflow-hidden shadow-2xl relative"
     >
       {/* Decorative Stamp */}
       <div className="absolute top-10 right-10 w-24 h-24 border-4 border-primary/20 rounded-full flex items-center justify-center -rotate-12 pointer-events-none">
@@ -27,7 +27,7 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
       </div>
 
       {/* Header */}
-      <div className="p-8 border-b border-white/5 bg-white/[0.02]">
+      <div className="p-8 border-b border-border bg-white/[0.02]">
         <div className="flex justify-between items-start">
           <div>
             <h2 className="text-3xl font-heading font-bold gradient-text">SKILLS PASSPORT</h2>
@@ -44,7 +44,7 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
 
       {/* Profile Info */}
       <div className="p-8 space-y-8">
-        <div className="flex items-center gap-6 pb-8 border-b border-white/5">
+        <div className="flex items-center gap-6 pb-8 border-b border-border">
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center text-3xl">
             👤
           </div>
@@ -69,7 +69,7 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {profile.skills.map((skill, i) => (
-              <div key={i} className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-colors">
+              <div key={i} className="p-4 rounded-xl bg-white/[0.03] border border-border hover:border-primary/30 transition-colors">
                 <div className="flex justify-between items-start mb-1">
                   <span className="font-bold text-sm">{skill}</span>
                   <span className="text-[8px] font-mono bg-white/10 px-1.5 py-0.5 rounded text-text-muted">ISCO-7422</span>
@@ -104,14 +104,14 @@ export const SkillsPassport = ({ profile, country }: SkillsPassportProps) => {
         </button>
         <button 
           onClick={() => alert('Opening WhatsApp to share your verified credentials with local tech co-operatives...')}
-          className="px-6 py-3 rounded-xl border border-white/10 font-bold text-sm flex items-center gap-2 hover:bg-white/5 transition-colors"
+          className="px-6 py-3 rounded-xl border border-border font-bold text-sm flex items-center gap-2 hover:bg-white/5 transition-colors text-text"
         >
           <Share2 size={16} /> Share via WhatsApp
         </button>
       </div>
 
       {/* Footer Branding */}
-      <div className="p-4 text-center border-t border-white/5 bg-white/[0.01]">
+      <div className="p-4 text-center border-t border-border bg-white/[0.01]">
         <p className="text-[8px] text-text-muted font-bold uppercase tracking-tighter">
           Infrastructure for Economic Visibility • Powered by World Bank STEP Data
         </p>

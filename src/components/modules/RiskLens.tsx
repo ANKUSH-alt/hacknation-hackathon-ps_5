@@ -40,7 +40,7 @@ export const RiskLens = () => {
               <div key={skillName} className="space-y-2">
                 <div className="flex justify-between items-end">
                   <div>
-                    <span className="font-semibold text-white">{skillName}</span>
+                    <span className="font-semibold text-text">{skillName}</span>
                     <span className={`ml-3 text-[10px] px-2 py-0.5 rounded-full ${
                       data.outlook === 'Growing' ? 'bg-green-500/20 text-green-400' :
                       data.outlook === 'Stable' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-red-500/20 text-red-400'

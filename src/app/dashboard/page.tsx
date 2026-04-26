@@ -157,7 +157,7 @@ const MiniStat = ({ label, value, icon, refText, color }: { label: string; value
 const ProgressBar = ({ label, value, color, glow }: { label: string; value: number; color: string; glow: string }) => (
   <div className="space-y-2">
     <div className="flex justify-between text-[11px] font-bold uppercase tracking-wider">
-      <span className="text-white/80">{label}</span>
+      <span className="text-text font-bold uppercase">{label}</span>
       <span className="font-mono text-primary">{value}%</span>
     </div>
     <div className="h-2.5 bg-white/5 rounded-full overflow-hidden p-[1px]">

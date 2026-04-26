@@ -36,7 +36,7 @@ export const RecalibrationOverlay = () => {
               >
                 Recalibrating Infrastructure
               </motion.p>
-              <p className="text-white/60 text-[10px] font-mono">Syncing {country.name} Labor Data...</p>
+              <p className="text-text-muted text-[10px] font-mono">Syncing {country.name} Labor Data...</p>
             </div>
           </div>
         </motion.div>

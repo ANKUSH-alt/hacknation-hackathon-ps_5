@@ -110,7 +110,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/skills" className="btn-primary">Get Started</Link>
-            <Link href="/dashboard" className="px-6 py-3 rounded-xl border border-white/10 font-semibold hover:bg-white/5 transition-all text-white">View Dashboard</Link>
+            <Link href="/dashboard" className="px-6 py-3 rounded-xl border border-border font-semibold hover:bg-white/5 transition-all text-text">View Dashboard</Link>
           </div>
         </div>
       </section>

@@ -16,8 +16,8 @@ export const CountrySwitcher = () => {
           disabled={isLoading}
           className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 ${
             country.id === c.id 
-              ? 'bg-white/10 text-white shadow-lg border border-white/10' 
-              : 'text-text-muted hover:text-white hover:bg-white/5'
+              ? 'bg-primary/10 text-primary shadow-lg border border-primary/20' 
+              : 'text-text-muted hover:text-text hover:bg-white/5'
           }`}
         >
           {c.name}
