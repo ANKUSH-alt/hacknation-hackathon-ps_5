@@ -6,12 +6,12 @@ import { Limitations } from './Limitations';
 
 export const Footer = () => {
   return (
-    <footer className="py-12 px-6 border-t border-white/5 bg-[#050505]">
+    <footer className="py-12 px-6 border-t border-border bg-card">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-primary rounded flex items-center justify-center font-bold text-xs italic">U</div>
-            <span className="font-heading font-bold text-sm tracking-tight text-white">UNMAPPED</span>
+            <div className="w-6 h-6 bg-primary rounded flex items-center justify-center font-bold text-xs italic text-white">U</div>
+            <span className="font-heading font-bold text-sm tracking-tight text-text">UNMAPPED</span>
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">

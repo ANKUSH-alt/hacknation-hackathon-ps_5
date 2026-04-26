@@ -2,6 +2,7 @@ import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Navbar } from "@/components/layout/Navbar";
 import { RecalibrationOverlay } from "@/components/layout/RecalibrationOverlay";
 import { OfflineIndicator } from "@/components/layout/OfflineIndicator";
@@ -34,17 +35,19 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] font-jakarta" suppressHydrationWarning={true}>
-        <AppProvider>
-          <Navbar />
-          <RecalibrationOverlay />
-          <div className="flex-1 flex flex-col">
-            {children}
-          </div>
-          <Footer />
-          <OfflineIndicator />
-          <VoiceAssistance />
-        </AppProvider>
+      <body className="min-h-full flex flex-col font-jakarta" suppressHydrationWarning={true}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <AppProvider>
+            <Navbar />
+            <RecalibrationOverlay />
+            <div className="flex-1 flex flex-col">
+              {children}
+            </div>
+            <Footer />
+            <OfflineIndicator />
+            <VoiceAssistance />
+          </AppProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
