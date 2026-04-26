@@ -20,7 +20,16 @@ export const Navbar = () => {
         <NavLink href="/dashboard" label="Policymaker" />
       </div>
 
-      <CountrySwitcher />
+      {/* Language & Country */}
+      <div className="flex items-center gap-2 md:gap-4">
+        <select className="bg-transparent border-none text-[10px] font-bold text-text-muted hover:text-white transition-colors cursor-pointer outline-none uppercase tracking-widest">
+          <option value="en">EN</option>
+          <option value="tw">TW</option>
+          <option value="hi">HI</option>
+        </select>
+        <div className="w-[1px] h-4 bg-white/10 hidden md:block" />
+        <CountrySwitcher />
+      </div>
     </nav>
   );
 };

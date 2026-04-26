@@ -80,5 +80,8 @@ graph TD
     G --> H[Government Training Policy]
 ```
 
----
-*Built for the World Bank Youth Summit 2026. Connecting the invisible generation.*
+## ⚖️ 7. Data Sovereignty & Privacy
+For World Bank/Institutional deployment, UNMAPPED follows a **Privacy-by-Design** approach:
+- **Local-First Storage**: User skill profiles are stored in the browser's local storage or exported as portable IDs, ensuring the user owns their data.
+- **Anonymized Signal Aggregation**: Policymaker dashboards use anonymized, aggregated data to prevent the identification of individual youth workers in vulnerable informal sectors.
+- **Incomplete Credentials**: By not requiring PII (Personal Identifiable Information) like full names or government IDs for basic mapping, we protect the most vulnerable workers.

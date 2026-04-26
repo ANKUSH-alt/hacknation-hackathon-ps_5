@@ -57,6 +57,7 @@ export const OpportunityMatching = () => {
                 <div className="text-right">
                   <p className="font-bold text-primary">{op.wage}</p>
                   <p className="text-[10px] text-text-muted uppercase tracking-wider">{op.distance}</p>
+                  <p className="text-[8px] text-text-muted/50 uppercase mt-1">Source: ILOSTAT 2024</p>
                 </div>
                 <motion.button 
                   whileTap={{ scale: 0.95 }}

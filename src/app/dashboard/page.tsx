@@ -46,9 +46,22 @@ export default function DashboardPage() {
                 <div key={i} className="flex-1 bg-primary/20 border border-primary/40 rounded-t-lg transition-all duration-700 hover:bg-primary/40" style={{ height: `${h}%` }} />
               ))}
             </div>
-            <div className="flex justify-between mt-4 text-[10px] text-text-muted font-bold uppercase tracking-wider">
-              <span>2026 Q1</span>
-              <span>2026 Q4</span>
+            <div className="grid grid-cols-3 gap-4 mt-6">
+              <div className="card glass">
+                <p className="text-xs text-text-muted uppercase font-bold mb-1">Youth Skill Gaps</p>
+                <p className="text-3xl font-bold text-error">24%</p>
+                <p className="text-[8px] text-text-muted mt-2 uppercase tracking-tighter">Ref: World Bank WDI 2024</p>
+              </div>
+              <div className="card glass">
+                <p className="text-xs text-text-muted uppercase font-bold mb-1">AI Exposure Index</p>
+                <p className="text-3xl font-bold text-primary">0.68</p>
+                <p className="text-[8px] text-text-muted mt-2 uppercase tracking-tighter">Ref: Frey-Osborne Calibration</p>
+              </div>
+              <div className="card glass">
+                <p className="text-xs text-text-muted uppercase font-bold mb-1">Matched Outcomes</p>
+                <p className="text-3xl font-bold text-success">8.4k</p>
+                <p className="text-[8px] text-text-muted mt-2 uppercase tracking-tighter">Real-time Matching Signal</p>
+              </div>
             </div>
           </div>
         </div>
